@@ -28,3 +28,7 @@ Ich habe versucht herauszufinden wie ich einen Assambler machen kann und was ich
 
 [1] [Gemeni Chatverlauf](https://www.google.com/search?q=wie+kann+man+einen+eigenen+assambler+f%C3%BCr+seine+eigene+CPU+machen&rlz=1C1CHBF_deCH1069__1070&sourceid=chrome&ie=UTF-8&amc=1&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCjIxMjA1ajBqMzGoAgOwAgHqBwoIARAAGAAgACgA&oq=wie+kann+man+einen+eigenen+assambler+f%C3%BCr+seine+eigene+CPU+machen&udm=50&aep=42&cud=2&qsubts=1782919174044&source=chrome.crn.rb&mstk=AUtExfCCyra4rtyEWuZZBwFGp7EI95wpKOPYE21YbdFEOVqEkGKvkKKoi1vRaHouYEMwbTL2K9bUml3pVSO11T4R7cRN8c7bnoXBuN_yAQBve15uHg4_d1F_1ryks7tc7aOOFw6Gb_HaOLR2pc4v6inc2J2OrkCgOImxKcE&csuir=1&atvm=2)
 
+## 2026-07-28
+
+### 14:30 - 16:00
+Ich habe einen simplen assembler mit Gemeni gemacht und schonmal die verschiedenen befehle mit ihrer jeweiligen liste hinein geschrieben.

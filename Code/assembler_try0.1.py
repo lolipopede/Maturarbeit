@@ -10,6 +10,8 @@ OPCODES = {"AND(D,A)": 000000, "0": 000010, "OR(D,A)": 000100
 Ziel = {"dont write": 000, "write to M": 001, "write to D": 010, 
         "write to A": 100, "write to DM": 011, "write to AM": 101, 
         "write to AD": 110, "write to ADM": 111}
+Jump = {"no jump": 000, "comp>0": 001, "comp=0": 010, "comp>=0": 011,
+        "comp<0": 100, "comp/=0": 101, "comp=<0": 110, "comp always": 111}
 REGISTERS = {"R0": 0b00, "R1": 0b01, "R2": 0b10, "R3": 0b11}
 
 def translate_line(line):
