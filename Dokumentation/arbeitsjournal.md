@@ -32,3 +32,11 @@ Ich habe versucht herauszufinden wie ich einen Assambler machen kann und was ich
 
 ### 14:30 - 16:00
 Ich habe einen simplen assembler mit Gemeni gemacht und schonmal die verschiedenen befehle mit ihrer jeweiligen liste hinein geschrieben.
+
+## 2026-08-02
+
+### 17:00 - 17:30
+Ich habe versucht meinen assambler für die Beta-Befehle fertigzustellen bin aber auf mehrere Probleme gestossen wie zum Beispiel das ich die ausgabe nicht so isst das es das richtige ausgibt.
+
+### 19:30 - 20:00   21:30 - 22:30
+In dieser Zeit habe ich meine Beta-Befehl assembler fertiggestellt und habe natürlich alles trubleshooten müssen und bin mehrfach auf den fehler gekommen das es nichts ausgeben wollte oder das es nicht eine binärzahl ausgab sondern einfach eine zahl ausgab. Ich bin jedoch nicht ganz ferig da ich die Alpha befehle nicht mit eingeschlossen habe aber ich gehe davon aus das das nicht sonderlich schwierig sein sollte.
