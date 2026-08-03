@@ -23,7 +23,7 @@ def encode_alpha_instruction(value):
         raise ValueError("Alpha-Befehl darf nur positive Zahlen enthalten.")
     if value >= 2 ** 15:
         raise ValueError("Alpha-Befehl passt nicht in 15 Bit.")
-    return "0" + format(value, "015b")
+    return "0b" + "0" + format(value, "015b")
 
 def translate_line(line):
     line = line.strip()
@@ -44,7 +44,7 @@ def translate_line(line):
     if target not in Jump:
         raise ValueError(f"Unbekannter Jump: {target}")    
 
-    instruction = "1111" + format(OPCODES[cmd], "06b") + format(Ziel[direction], "03b") + format(Jump[target], "03b")
+    instruction = "0b1111" + format(OPCODES[cmd], "06b") + format(Ziel[direction], "03b") + format(Jump[target], "03b")
     return instruction
    
 
