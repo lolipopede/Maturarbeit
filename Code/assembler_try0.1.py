@@ -37,12 +37,16 @@ def translate_line(line):
     
     parts = line.replace(",", " ").split()
     cmd, direction, target = parts[0], parts[1], parts[2]
-    
+    if cmd not in OPCODES:
+        raise ValueError(f"Unbekannter Opcode: {cmd}")
+    if direction not in Ziel:
+        raise ValueError(f"Unbekanntes Ziel: {direction}")
+    if target not in Jump:
+        raise ValueError(f"Unbekannter Jump: {target}")    
 
     instruction = "1111" + format(OPCODES[cmd], "06b") + format(Ziel[direction], "03b") + format(Jump[target], "03b")
     return instruction
    
-
 
 def main():
     input_path = Path(__file__).with_name("test_for_assembler.txt")
@@ -53,6 +57,7 @@ def main():
         translated = translate_line(line)
         if translated is not None:
             print(translated)
+
 
 if __name__ == "__main__":
     main()
