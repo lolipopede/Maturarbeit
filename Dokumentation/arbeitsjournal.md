@@ -40,3 +40,8 @@ Ich habe versucht meinen assambler für die Beta-Befehle fertigzustellen bin abe
 
 ### 19:30 - 20:00   21:30 - 22:30
 In dieser Zeit habe ich meine Beta-Befehl assembler fertiggestellt und habe natürlich alles trubleshooten müssen und bin mehrfach auf den fehler gekommen das es nichts ausgeben wollte oder das es nicht eine binärzahl ausgab sondern einfach eine zahl ausgab. Ich bin jedoch nicht ganz ferig da ich die Alpha befehle nicht mit eingeschlossen habe aber ich gehe davon aus das das nicht sonderlich schwierig sein sollte.
+
+## 2026-08-03
+
+### 17:30-19:20
+Ich habe die allpha befehle hinzugefügt und bin auf sehr viele feher gestossen und habe siei beheben müssen. Ich habe am anfang nicht bedacht das der alpha befehl eine 15bin Zahl ist und habe gleichzeitig nicht ganz gewusst wie ich eine biliebige zahl zulassen kann in meinem alpha befehl. Dies führte dazu dass ich jetzt leider aus kleinen problemen noch nicht das 0b vor die Befehle schreiben konnte sollte aber kein all zu grosser fix sein. weiter ist noch ein ziel algemeine fehler meldungen einzubauen.
