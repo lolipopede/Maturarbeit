@@ -45,3 +45,6 @@ In dieser Zeit habe ich meine Beta-Befehl assembler fertiggestellt und habe nat�
 
 ### 17:30-19:20
 Ich habe die allpha befehle hinzugef체gt und bin auf sehr viele feher gestossen und habe siei beheben m체ssen. Ich habe am anfang nicht bedacht das der alpha befehl eine 15bin Zahl ist und habe gleichzeitig nicht ganz gewusst wie ich eine biliebige zahl zulassen kann in meinem alpha befehl. Dies f체hrte dazu dass ich jetzt leider aus kleinen problemen noch nicht das 0b vor die Befehle schreiben konnte sollte aber kein all zu grosser fix sein. weiter ist noch ein ziel algemeine fehler meldungen einzubauen.
+
+### 19:40 - 20:10
+Ich habe nun noch den pr채fix 0b hinzugef체gt und es noch ein paar fehlermeldungen hinzugef체gt mit einer fancy art und weise die ich nicht kannte.
