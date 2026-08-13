@@ -49,7 +49,7 @@ def translate_line(line):
    
 
 def main():
-    input_path = Path(__file__).with_name("test_for_assembler.txt")
+    input_path = Path(__file__).with_name("test_for_assembler.asm")
     with input_path.open("r", encoding="utf-8") as datei:
         inhalt = datei.read()
 
