@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber main"] 1781874814.65759 "main.bcf" "main.bbl" "main" 1786639875.08856 0
-  "main.bcf" 1786639874 108104 3bf408881e2163f10b4ad6e4c3b93cc8 "pdflatex"
+["biber main"] 1781874814.65759 "main.bcf" "main.bbl" "main" 1786640254.44659 0
+  "main.bcf" 1786640253 108104 3bf408881e2163f10b4ad6e4c3b93cc8 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1786639870.32294 "c:/Users/kogog/OneDrive/Maturarbeit/LaTeX/main.tex" "main.pdf" "main" 1786639875.09055 0
+["pdflatex"] 1786640249.76189 "c:/Users/kogog/OneDrive/Maturarbeit/LaTeX/main.tex" "main.pdf" "main" 1786640254.44958 0
   "C:/Users/kogog/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1781874811 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/kogog/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1781874561 13333487 c50e73f76feb7e0a7a9dd0ffd592daf3 ""
   "C:/Users/kogog/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -237,12 +237,12 @@
   "C:/Users/kogog/AppData/Local/Programs/MiKTeX/tex/latex/ulem/ulem.sty" 1578651445 15682 94f55b803e160cf7fb6e4d77d07cfe1d ""
   "C:/Users/kogog/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/kogog/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "c:/Users/kogog/OneDrive/Maturarbeit/LaTeX/main.tex" 1786639849 1962 c57f94dbe82ec350bd9a325b8f601206 ""
-  "main.aux" 1786639874 416 59d222194c61a9f973b3a4c92047bda2 "pdflatex"
+  "c:/Users/kogog/OneDrive/Maturarbeit/LaTeX/main.tex" 1786640248 1962 c57f94dbe82ec350bd9a325b8f601206 ""
+  "main.aux" 1786640253 416 59d222194c61a9f973b3a4c92047bda2 "pdflatex"
   "main.bbl" 1781874908 0 d41d8cd98f00b204e9800998ecf8427e "biber main"
-  "main.out" 1786639874 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.run.xml" 1786639874 2260 66a495e146ae21cbf1e8d6252000d934 "pdflatex"
-  "main.tex" 1786639849 1962 c57f94dbe82ec350bd9a325b8f601206 ""
+  "main.out" 1786640253 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.run.xml" 1786640253 2260 66a495e146ae21cbf1e8d6252000d934 "pdflatex"
+  "main.tex" 1786640248 1962 c57f94dbe82ec350bd9a325b8f601206 ""
   (generated)
   "main.aux"
   "main.bcf"
