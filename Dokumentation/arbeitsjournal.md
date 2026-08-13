@@ -48,3 +48,8 @@ Ich habe die allpha befehle hinzugefügt und bin auf sehr viele feher gestossen 
 
 ### 19:40 - 20:10
 Ich habe nun noch den präfix 0b hinzugefügt und es noch ein paar fehlermeldungen hinzugefügt mit einer fancy art und weise die ich nicht kannte.
+
+## 2026-08-13
+
+### 12:00 - 12:30
+Ich habe versucht meine Maturarbeit auf meinem PC zu öffnen damit ich zuhause auf diesem arbeiten kann.
