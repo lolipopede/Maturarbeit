@@ -1,0 +1,33 @@
+# computer und dossier von lehrer:
+- computer mit befehlen zu verfügung gestellt von betreuer 
+- eigener computer daher etwas komplett neues 
+- befehle vorgegeben durch computer
+
+# programm (assembler)
+
+## anfang und befehle
+- angefangen mit informieren durch gewisse webseiten wie nand to tetris welche auch einen assembler machen
+- dann noch grobstrucktrur eines assembler von ai generieren lassen und erklären lassen
+- grobstrucktrur zeigte mir liste von befehlen welche ich anpassen musste
+- realisieren dass befehle anders aufgebaut waren und daher komplett neue liste machen 
+- befehle in einzelteile zerlegen und realisieren das ich noch mehr listen machen muss für die einzelteile anstatt den ganzen befehlen
+- listen updaten und schön designen
+
+## übersetzung
+- angefangen mit der beschreibung der ai und wieder 90% umgeschrieben
+- beta befehle zuerst da strucktur von ai dazu passte und die listen dafür wichtig sind und ich dachte wäre einfacher
+- befehle in 3 teile aufgeteilt wie in liste und so auch die übersetzung : part 1 wird in liste 1 gesucht und so weiter
+- zusammen bauen der einzelnen teile damit wir wieder einen befehl haben und natürlich nicht mehr text sondern binär code
+- mehrfaches umschreiben und verbessern des bestehenden codes da hässlich und nicht funktionel
+- hinzufügen dass es für mehr als nur eine zeile funktioniert
+- grosser strugle mit zusammen fügen der einzelnen teile damit tatsächlicher binärcode raus kommt
+- fertigstellen der beta befehle
+- angefangen mit alpha befehlen 
+- verwirrung mit darstellung von random zahl bis 2^15
+- recherche und stossen auf re 
+- anwendung und immernoch leichter fehler den ich nicht weis wie beheben
+- alpha befehle zeigen wie betha befehle besser machen und anwenden
+- schlussendlich noch ai fragen was es mir noch empfehlen würde: def main
+- einführung von main nicht genau verstanden warum ausser estetik
+- zuguter letzt noch richtige fehlermeldungen hinzugefügt mit nachfrage aus internet da ich nicht print() haben wollte sondern actual fehler meldung
+- 

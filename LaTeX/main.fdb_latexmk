@@ -1,11 +1,11 @@
 # Fdb version 4
 ["biber main"] 0 "main.bcf" "main.bbl" "main" 0 -1
-  "main.bcf" 1786706201 108104 3bf408881e2163f10b4ad6e4c3b93cc8 "pdflatex"
+  "main.bcf" 1786706272 108104 3bf408881e2163f10b4ad6e4c3b93cc8 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1786706197.29523 "c:/Users/kogog/OneDrive/Maturarbeit/LaTeX/main.tex" "main.pdf" "main" 1786706202.8372 2
+["pdflatex"] 1786706267.99873 "c:/Users/kogog/OneDrive/Maturarbeit/LaTeX/main.tex" "main.pdf" "main" 1786706273.73414 2
   "C:/Users/kogog/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1781874811 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/kogog/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1781874561 13333487 c50e73f76feb7e0a7a9dd0ffd592daf3 ""
   "C:/Users/kogog/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -239,12 +239,12 @@
   "C:/Users/kogog/AppData/Local/Programs/MiKTeX/tex/latex/ulem/ulem.sty" 1578651445 15682 94f55b803e160cf7fb6e4d77d07cfe1d ""
   "C:/Users/kogog/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/kogog/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "Kapitel/chapter 1.aux" 1786706201 3991 baa34962aff03b8e02e22ffce0652471 "pdflatex"
+  "Kapitel/chapter 1.aux" 1786706272 3991 baa34962aff03b8e02e22ffce0652471 "pdflatex"
   "Kapitel/chapter 1.tex" 1786706193 96 d92da9d01e69727eb0bcd0aa4a178fc2 ""
   "c:/Users/kogog/OneDrive/Maturarbeit/LaTeX/main.tex" 1786706165 1990 6e650e5886a80924bede506bc612819f ""
-  "main.aux" 1786706201 444 42e1adcb84deae85a89c9a1910922a66 "pdflatex"
+  "main.aux" 1786706272 444 42e1adcb84deae85a89c9a1910922a66 "pdflatex"
   "main.bbl" 1781874908 0 d41d8cd98f00b204e9800998ecf8427e "biber main"
-  "main.out" 1786706201 159 0054e2104c171515662fd96471ac88f4 "pdflatex"
+  "main.out" 1786706272 159 0054e2104c171515662fd96471ac88f4 "pdflatex"
   "main.tex" 1786706165 1990 6e650e5886a80924bede506bc612819f ""
   (generated)
   "Kapitel/chapter 1.aux"
