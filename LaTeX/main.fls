@@ -382,12 +382,6 @@ INPUT C:\Users\kogog\AppData\Local\Programs\MiKTeX\tex\latex\microtype\mt-cmr.cf
 INPUT C:\Users\kogog\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-german.trsl
 INPUT C:\Users\kogog\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-german.trsl
 INPUT C:\Users\kogog\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-german.trsl
-INPUT .\main.out
-INPUT .\main.out
-INPUT main.out
-INPUT main.out
-INPUT .\main.out
-INPUT .\main.out
 OUTPUT main.out
 OUTPUT main.pdf
 INPUT C:\Users\kogog\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr17.tfm
@@ -432,13 +426,25 @@ INPUT C:\Users\kogog\AppData\Local\Programs\MiKTeX\tex\latex\microtype\mt-msb.cf
 INPUT C:\Users\kogog\AppData\Local\Programs\MiKTeX\tex\latex\microtype\mt-msb.cfg
 INPUT C:\Users\kogog\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\kogog\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT .\Kapitel\chapter 1.tex
+INPUT .\Kapitel\chapter 1.tex
 INPUT C:\Users\kogog\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\kogog\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
+OUTPUT Kapitel\chapter 1.aux
+INPUT .\Kapitel\chapter 1.tex
+INPUT .\Kapitel\chapter 1.tex
+INPUT Kapitel\chapter 1.tex
+INPUT C:\Users\kogog\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
+INPUT C:\Users\kogog\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT main.aux
+INPUT .\Kapitel\chapter 1.aux
+INPUT .\Kapitel\chapter 1.aux
+INPUT Kapitel\chapter 1.aux
 INPUT .\main.out
 INPUT .\main.out
-INPUT main.run.xml
 OUTPUT main.run.xml
+INPUT C:\Users\kogog\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
+INPUT C:\Users\kogog\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Users\kogog\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr10.pfb
 INPUT C:\Users\kogog\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr10.pfb
 INPUT C:\Users\kogog\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr12.pfb

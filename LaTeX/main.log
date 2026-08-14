@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.19)  13 AUG 2026 18:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.19)  14 AUG 2026 13:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -923,10 +923,7 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 89.
 (C:\Users\kogog\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (main.aux
-Package babel Info: 'ngerman' activates 'german' shorthands.
-(babel)             Reported on input line 9.
-)
+) (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
@@ -947,6 +944,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
 LaTeX Font Info:    ... okay on input line 89.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
 LaTeX Font Info:    ... okay on input line 89.
+Package babel Info: 'ngerman' activates 'german' shorthands.
+(babel)             Reported on input line 89.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1052,12 +1051,11 @@ Package translations Info: loading dictionary `translations-basic-dictionary' fo
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 Package hyperref Info: Link coloring ON on input line 89.
-(main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 95.
- (C:\Users\kogog\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
+(C:\Users\kogog\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 95.
@@ -1091,29 +1089,67 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [1
 
-{C:/Users/kogog/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/kogog/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}] (main.aux)
+{C:/Users/kogog/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/kogog/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
+\openout2 = `"Kapitel/chapter 1.aux"'.
+
+ (Kapitel/chapter 1.tex
+Kapitel/chapter 1.tex:1: Undefined control sequence.
+l.1 \chapter
+            {Einleitung}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[2
+
+] (main.aux (Kapitel/chapter 1.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  0054E2104C171515662FD96471AC88F4;159.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45840 strings out of 467871
- 1068290 string characters out of 5418376
- 1981646 words of memory out of 5000000
- 74067 multiletter control sequences out of 15000+600000
- 651200 words of font info for 74 fonts, out of 8000000 for 9000
+ 45893 strings out of 467871
+ 1069698 string characters out of 5418376
+ 1981577 words of memory out of 5000000
+ 74106 multiletter control sequences out of 15000+600000
+ 657573 words of font info for 80 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 99i,6n,118p,1239b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/kogog/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/kogog/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/kogog/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb>
-Output written on main.pdf (1 page, 69293 bytes).
+ 99i,11n,118p,1239b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/kogog/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/kogog/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/kogog/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/kogog/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb>
+Output written on main.pdf (2 pages, 103257 bytes).
 PDF statistics:
- 30 PDF objects out of 1000 (max. 8388607)
- 2 named destinations out of 1000 (max. 500000)
- 12301 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 40 PDF objects out of 1000 (max. 8388607)
+ 4 named destinations out of 1000 (max. 500000)
+ 16397 words of extra memory for PDF output out of 17280 (max. 10000000)
 
