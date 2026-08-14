@@ -65,6 +65,7 @@ def translate_line(line):
     if not line or line.startswith("#"):
         return None
 
+
     alpha_match = re.fullmatch(r"A\s*=\s*(\d+)", line, flags=re.IGNORECASE)
     if alpha_match:
         value = int(alpha_match.group(1))
