@@ -58,3 +58,6 @@ Ich habe versucht meine Maturarbeit auf meinem PC zu öffnen damit ich zuhause a
 
 ### 15:45 - 16:32
 Ich habe einen kurzen plan geschrieben (mit stichworten) was ich in meine arbeit einbauen möchte und wie ich sie gerne gestallten würde
+
+### 20:15 - 21:45
+Ich habe ein paar Sachen gemacht für das gespräch um sicher zu stellen das ich die wichtigsten fragen stellen kann.
