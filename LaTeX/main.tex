@@ -23,6 +23,7 @@
 }
 \usepackage{graphicx}
 \usepackage[backend=biber,style=authoryear]{biblatex}
+\usepackage{csquotes} % Empfehlung für biblatex mit babel
 \usepackage{setspace}
 \onehalfspacing
 \usepackage{microtype} % bessere Silbentrennung & Grauwert
@@ -71,6 +72,7 @@
 % Kopf- & Fusszeile
 % --------------------
 \usepackage{fancyhdr}
+\setlength{\headheight}{14pt} % verhindert Warnung "\headheight is too small"
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{} %-- KOPFZEILE --%
