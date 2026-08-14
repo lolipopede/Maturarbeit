@@ -53,3 +53,8 @@ Ich habe nun noch den präfix 0b hinzugefügt und es noch ein paar fehlermeldung
 
 ### 12:00 - 12:30
 Ich habe versucht meine Maturarbeit auf meinem PC zu öffnen damit ich zuhause auf diesem arbeiten kann.
+
+## 2026-08-14
+
+### 15:45 - 16:32
+Ich habe einen kurzen plan geschrieben (mit stichworten) was ich in meine arbeit einbauen möchte und wie ich sie gerne gestallten würde
