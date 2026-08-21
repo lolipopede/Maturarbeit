@@ -61,3 +61,8 @@ Ich habe einen kurzen plan geschrieben (mit stichworten) was ich in meine arbeit
 
 ### 20:15 - 21:45
 Ich habe ein paar Sachen gemacht für das gespräch um sicher zu stellen das ich die wichtigsten fragen stellen kann.
+
+## 21.08.2026
+
+### 14:00 - 15:30
+Ich habe versucht labels hinzuzufügen und bin damit leider noch nicht ganz fertig. Ich muss noch die erkennung der labels machen und das speichern der variabeln machen.
