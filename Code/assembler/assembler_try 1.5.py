@@ -3,6 +3,8 @@ from pathlib import Path
 import re
 
 OPCODES = {"AND(D,A)": 0b000000, 
+           "A" :0b000110,
+           "D": 0b000111,
            "0": 0b000010, 
            "OR(D,A)": 0b000100,
            "XOR":0b001000, 
@@ -51,7 +53,9 @@ Jump = {"nj": 0b000,
         "comp always": 0b111
 }
 
+lables = {}
 
+zeile = 1
 
 def encode_alpha_instruction(value):
     if value < 0:
@@ -61,10 +65,23 @@ def encode_alpha_instruction(value):
     return "0b" + "0" + format(value, "015b")
 
 def translate_line(line):
+    global zeile
+    zeile = zeile + 1
+
     line = line.strip()
     if not line or line.startswith("#"):
         return None
 
+    if line.startswith("@"):
+        lables[line[1:]] = zeile
+        return None
+
+    wariable_match = re.fullmatch(r"(B-Z)*(a-z)*\s*=\s*(\d+)", line, flags=re.IGNORECASE)
+    if wariable_match:
+        value = int(wariable_match.group(3))
+        if value > 2 ** 15:
+            raise ValueError("Wariable-Befehl passt nicht in 15 Bit.")
+        return encode_alpha_instruction(value)
 
     alpha_match = re.fullmatch(r"A\s*=\s*(\d+)", line, flags=re.IGNORECASE)
     if alpha_match:

@@ -1,7 +1,7 @@
--1, wM, nj
-1, dw, nj
-
-
-
 A=100
+-1, wD, nj
+D+A, wD, nj
+A=0
+D, wM, nj
+
 
