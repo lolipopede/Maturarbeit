@@ -66,3 +66,8 @@ Ich habe ein paar Sachen gemacht für das gespräch um sicher zu stellen das ich
 
 ### 14:00 - 15:30
 Ich habe versucht labels hinzuzufügen und bin damit leider noch nicht ganz fertig. Ich muss noch die erkennung der labels machen und das speichern der variabeln machen.
+
+## 04.09.2026
+
+### 12:20 - 13:20
+Ich habe an dem assembler gekämpft und bin immernoch drauf und dran labels einzufügen.

@@ -55,7 +55,7 @@ Jump = {"nj": 0b000,
 
 lables = {}
 
-zeile = 1
+zeile = 0
 
 def encode_alpha_instruction(value):
     if value < 0:
@@ -64,16 +64,28 @@ def encode_alpha_instruction(value):
         raise ValueError("Alpha-Befehl passt nicht in 15 Bit.")
     return "0b" + "0" + format(value, "015b")
 
+def labels_in_M():
+    alpha_part = "0b" + "0" + format(zeile, "015b")
+    
+
+    return None
+
 def translate_line(line):
     global zeile
     zeile = zeile + 1
 
     line = line.strip()
     if not line or line.startswith("#"):
+        zeile = zeile - 1
         return None
 
     if line.startswith("@"):
         lables[line[1:]] = zeile
+
+        return None
+
+    if line in lables:
+        
         return None
 
     wariable_match = re.fullmatch(r"(B-Z)*(a-z)*\s*=\s*(\d+)", line, flags=re.IGNORECASE)
