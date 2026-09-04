@@ -71,3 +71,6 @@ Ich habe versucht labels hinzuzufügen und bin damit leider noch nicht ganz fert
 
 ### 12:20 - 13:20
 Ich habe an dem assembler gekämpft und bin immernoch drauf und dran labels einzufügen.
+
+### 19:30 - 20:00
+Ich habe es endlich geschaft das die zeile der labels in M gespeichert wird. Jetzt fehlt nur noch das ich sie irgendwie wieder aufrufen kann.
