@@ -66,9 +66,10 @@ def encode_alpha_instruction(value):
 
 def labels_in_M():
     alpha_part = "0b" + "0" + format(zeile, "015b")
-    
-
-    return None
+    store_D = "0b1111000110010000"
+    alpha_storage = "0b" + "0" + format(1 + len(lables), "015b")
+    Store_M = "0b1111000111001000"
+    return alpha_part + "\n" + store_D + "\n" + alpha_storage + "\n" + Store_M 
 
 def translate_line(line):
     global zeile
@@ -81,8 +82,10 @@ def translate_line(line):
 
     if line.startswith("@"):
         lables[line[1:]] = zeile
-
-        return None
+        return_message = labels_in_M()
+        zeile = zeile + 3
+        return return_message
+        
 
     if line in lables:
         
