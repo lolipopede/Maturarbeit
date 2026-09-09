@@ -2,6 +2,8 @@
 from pathlib import Path
 import re
 
+
+
 OPCODES = {"AND(D,A)": 0b000000, 
            "A" :0b000110,
            "D": 0b000111,
@@ -88,8 +90,11 @@ def translate_line(line):
         
 
     if line in lables:
-        
-        return None
+        zeile = zeile + 1
+        alpha_location = lables[line]
+
+        alpha_jump = "0b1111000110000111"
+        return "0b0" + format(alpha_location, "015b") + "\n" + alpha_jump
 
     wariable_match = re.fullmatch(r"(B-Z)*(a-z)*\s*=\s*(\d+)", line, flags=re.IGNORECASE)
     if wariable_match:
