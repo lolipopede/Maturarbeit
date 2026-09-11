@@ -66,13 +66,6 @@ def encode_alpha_instruction(value):
         raise ValueError("Alpha-Befehl passt nicht in 15 Bit.")
     return "0b" + "0" + format(value, "015b")
 
-def labels_in_M():
-    alpha_part = "0b" + "0" + format(zeile, "015b")
-    store_D = "0b1111000110010000"
-    alpha_storage = "0b" + "0" + format(1 + len(lables), "015b")
-    Store_M = "0b1111000111001000"
-    return alpha_part + "\n" + store_D + "\n" + alpha_storage + "\n" + Store_M 
-
 def translate_line(line):
     global zeile
     zeile = zeile + 1
@@ -83,10 +76,9 @@ def translate_line(line):
         return None
 
     if line.startswith("@"):
-        zeile = zeile + 3
+        zeile = zeile + 1
         lables[line[1:]] = zeile
-        return_message = labels_in_M()
-        return return_message
+        return None
         
 
     if line in lables:

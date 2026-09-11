@@ -1,5 +1,3 @@
 A = 4
-@leck
-@bomba
-
-leck
+@loop
+loop
