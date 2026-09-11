@@ -74,3 +74,8 @@ Ich habe an dem assembler gekämpft und bin immernoch drauf und dran labels einz
 
 ### 19:30 - 20:00
 Ich habe es endlich geschaft das die zeile der labels in M gespeichert wird. Jetzt fehlt nur noch das ich sie irgendwie wieder aufrufen kann.
+
+## 09.09.2026
+
+### ? - 16:15
+Ich habe leider nicht ganz auf die uhr geschaut als ich angefangen habe aber ich habe endlich die labels fertig gemacht indem ich sie jetzt auch wieder aufrufen konnte jedoch habe ich sie noch nicht ganz ausprobiert und warte daher mit der conclusion für einen fertigen assembler auf das Treffen mit meinem Maturaarbeitbetreuer.
