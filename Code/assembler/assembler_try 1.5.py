@@ -83,18 +83,17 @@ def translate_line(line):
         return None
 
     if line.startswith("@"):
+        zeile = zeile + 3
         lables[line[1:]] = zeile
         return_message = labels_in_M()
-        zeile = zeile + 3
         return return_message
         
 
     if line in lables:
         zeile = zeile + 1
         alpha_location = lables[line]
-
         alpha_jump = "0b1111000110000111"
-        return "0b0" + format(alpha_location, "015b") + "\n" + alpha_jump
+        return "0b" + "0" + format(alpha_location, "015b") + "\n" + alpha_jump
 
     wariable_match = re.fullmatch(r"(B-Z)*(a-z)*\s*=\s*(\d+)", line, flags=re.IGNORECASE)
     if wariable_match:
