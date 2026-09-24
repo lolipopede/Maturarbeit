@@ -79,3 +79,8 @@ Ich habe es endlich geschaft das die zeile der labels in M gespeichert wird. Jet
 
 ### ? - 16:15
 Ich habe leider nicht ganz auf die uhr geschaut als ich angefangen habe aber ich habe endlich die labels fertig gemacht indem ich sie jetzt auch wieder aufrufen konnte jedoch habe ich sie noch nicht ganz ausprobiert und warte daher mit der conclusion für einen fertigen assembler auf das Treffen mit meinem Maturaarbeitbetreuer.
+
+## 24.09.2026
+
+### 9:10 - 9:15 
+Ich habe nun auch noch den ValueError hinzugefügt und beginne jetzt mit meinem Programm. Ich habe mich dafür entschieden das Sieb des Erathostenes zu Programmieren

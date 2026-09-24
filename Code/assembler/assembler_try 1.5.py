@@ -75,6 +75,9 @@ def translate_line(line):
         zeile = zeile - 1
         return None
 
+    if line.startswith("@") and line.split("@")[1] in lables:
+        raise ValueError(f"Label '{line.split('@')[1]}' wurde bereits definiert.")
+
     if line.startswith("@"):
         zeile = zeile + 1
         lables[line[1:]] = zeile
