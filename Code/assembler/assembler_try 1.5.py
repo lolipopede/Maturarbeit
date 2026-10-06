@@ -57,6 +57,8 @@ Jump = {"nj": 0b000,
 
 lables = {}
 
+variables = {}
+
 zeile = 0
 
 def encode_alpha_instruction(value):
@@ -65,6 +67,13 @@ def encode_alpha_instruction(value):
     if value >= 2 ** 15:
         raise ValueError("Alpha-Befehl passt nicht in 15 Bit.")
     return "0b" + "0" + format(value, "015b")
+
+def encode_Variable_instruction(value):
+    alpha_part = encode_alpha_instruction(value)
+    store_d = "0b1111000110010000"
+    alpha_location = "0b" + "0" + format(1024 + len(variables), "015b")
+    store_m = "0b1111000111001000"
+    return alpha_part + "\n" + store_d + "\n" + alpha_location + "\n" + store_m
 
 def translate_line(line):
     global zeile
@@ -90,12 +99,12 @@ def translate_line(line):
         alpha_jump = "0b1111000110000111"
         return "0b" + "0" + format(alpha_location, "015b") + "\n" + alpha_jump
 
-    wariable_match = re.fullmatch(r"(B-Z)*(a-z)*\s*=\s*(\d+)", line, flags=re.IGNORECASE)
-    if wariable_match:
-        value = int(wariable_match.group(3))
+    Variable_match = re.fullmatch(r"(B-Z)*(a-z)*\s*=\s*(\d+)", line, flags=re.IGNORECASE)
+    if Variable_match:
+        value = int(Variable_match.group(3))
         if value > 2 ** 15:
-            raise ValueError("Wariable-Befehl passt nicht in 15 Bit.")
-        return encode_alpha_instruction(value)
+            raise ValueError("Variable-Befehl passt nicht in 15 Bit.")
+        return encode_Variable_instruction(value)
 
     alpha_match = re.fullmatch(r"A\s*=\s*(\d+)", line, flags=re.IGNORECASE)
     if alpha_match:
