@@ -89,3 +89,6 @@ Ich habe nun auch noch den ValueError hinzugefügt und beginne jetzt mit meinem 
 
 ### 11:00 - 11:30
 Ich habe nun Variabeln hinzugefügt aber noch nicht getestet muss daher noch ausprobieren und dann kann ich anfangen in meinem assembly das sieb des Erathostenes zu Programieren.
+
+### 15:00 -15:30
+Ich habe nun die Variabeln funktionell gemacht. hatte dies zufohr vergessen und daher hat nichts funktioniert.
