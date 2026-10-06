@@ -84,3 +84,8 @@ Ich habe leider nicht ganz auf die uhr geschaut als ich angefangen habe aber ich
 
 ### 9:10 - 9:15 
 Ich habe nun auch noch den ValueError hinzugefügt und beginne jetzt mit meinem Programm. Ich habe mich dafür entschieden das Sieb des Erathostenes zu Programmieren
+
+## 06.010.2026
+
+### 11:00 - 11:30
+Ich habe nun Variabeln hinzugefügt aber noch nicht getestet muss daher noch ausprobieren und dann kann ich anfangen in meinem assembly das sieb des Erathostenes zu Programieren.
