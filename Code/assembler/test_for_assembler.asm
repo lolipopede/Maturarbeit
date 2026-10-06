@@ -1,4 +1,4 @@
-A = 4
-@loop
-@loop
-loop
+b = 5
+
+b
+A-1, dw, nj

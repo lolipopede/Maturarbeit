@@ -5,6 +5,7 @@ import re
 
 
 OPCODES = {"AND(D,A)": 0b000000, 
+           "M": 0b100110,
            "A" :0b000110,
            "D": 0b000111,
            "0": 0b000010, 
@@ -99,11 +100,19 @@ def translate_line(line):
         alpha_jump = "0b1111000110000111"
         return "0b" + "0" + format(alpha_location, "015b") + "\n" + alpha_jump
 
-    Variable_match = re.fullmatch(r"(B-Z)*(a-z)*\s*=\s*(\d+)", line, flags=re.IGNORECASE)
+    if line in variables:
+        alpha_location = "0b" + "0" + format(variables[line], "015b")
+        write_a = "0b1111100110100000"
+        zeile = zeile + 1
+        return alpha_location + "\n" + write_a
+
+    Variable_match = re.fullmatch(r"[A-Za-z_][A-Za-z0-9_]*\s*=\s*(\d+)", line, flags=re.IGNORECASE)
     if Variable_match:
-        value = int(Variable_match.group(3))
+        variables[line.split("=")[0].strip()] = 1025 + len(variables)
+        value = int(Variable_match.group(1))
         if value > 2 ** 15:
             raise ValueError("Variable-Befehl passt nicht in 15 Bit.")
+        zeile = zeile + 3
         return encode_Variable_instruction(value)
 
     alpha_match = re.fullmatch(r"A\s*=\s*(\d+)", line, flags=re.IGNORECASE)
