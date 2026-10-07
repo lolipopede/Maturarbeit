@@ -1,6 +1,7 @@
 # CPU-Spezifikation
 from pathlib import Path
 import re
+import sys
 
 
 
@@ -89,8 +90,8 @@ def translate_line(line):
         raise ValueError(f"Label '{line.split('@')[1]}' wurde bereits definiert.")
 
     if line.startswith("@"):
-        zeile = zeile + 1
-        lables[line[1:]] = zeile
+        lables[line[1:]] = zeile - 1
+        zeile = zeile - 1
         return None
         
 
@@ -106,6 +107,11 @@ def translate_line(line):
         zeile = zeile + 1
         return alpha_location + "\n" + write_a
 
+    alpha_match = re.fullmatch(r"A\s*=\s*(\d+)", line, flags=re.IGNORECASE)
+    if alpha_match:
+        value = int(alpha_match.group(1))
+        return encode_alpha_instruction(value)
+
     Variable_match = re.fullmatch(r"[A-Za-z_][A-Za-z0-9_]*\s*=\s*(\d+)", line, flags=re.IGNORECASE)
     if Variable_match:
         variables[line.split("=")[0].strip()] = 1025 + len(variables)
@@ -114,13 +120,10 @@ def translate_line(line):
             raise ValueError("Variable-Befehl passt nicht in 15 Bit.")
         zeile = zeile + 3
         return encode_Variable_instruction(value)
-
-    alpha_match = re.fullmatch(r"A\s*=\s*(\d+)", line, flags=re.IGNORECASE)
-    if alpha_match:
-        value = int(alpha_match.group(1))
-        return encode_alpha_instruction(value)
     
     parts = line.replace(",", " ").split()
+    if len(parts) not in (3, 4):
+        raise ValueError(f"Ungültige Instruktion in Zeile {zeile}: {line}")
     cmd, direction, target = parts[0], parts[1], parts[2]
     if cmd not in OPCODES:
         raise ValueError(f"Unbekannter Opcode: {cmd}")
@@ -130,11 +133,17 @@ def translate_line(line):
         raise ValueError(f"Unbekannter Jump: {target}")    
 
     instruction = "0b1111" + format(OPCODES[cmd], "06b") + format(Ziel[direction], "03b") + format(Jump[target], "03b")
+    if len(parts) == 4:
+        label = parts[3]
+        if label not in lables:
+            raise ValueError(f"Unbekanntes oder noch nicht definiertes Label: {label}")
+        zeile = zeile + 1
+        return encode_alpha_instruction(lables[label]) + "\n" + instruction
     return instruction
    
 
 def main():
-    input_path = Path(__file__).with_name("test_for_assembler.asm")
+    input_path = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).with_name("test_for_assembler.asm")
     with input_path.open("r", encoding="utf-8") as datei:
         inhalt = datei.read()
 
