@@ -112,6 +112,17 @@ def translate_line(line):
         value = int(alpha_match.group(1))
         return encode_alpha_instruction(value)
 
+    variable_register_match = re.fullmatch(
+        r"([A-Za-z_][A-Za-z0-9_]*)\s*=\s*D", line, flags=re.IGNORECASE
+    )
+    if variable_register_match:
+        name = variable_register_match.group(1)
+        if name not in variables:
+            raise ValueError(f"Variable '{name}' wurde noch nicht definiert.")
+        address = variables[name]
+        zeile = zeile + 1
+        return encode_alpha_instruction(address) + "\n0b1111000111001000"
+
     Variable_match = re.fullmatch(r"[A-Za-z_][A-Za-z0-9_]*\s*=\s*(\d+)", line, flags=re.IGNORECASE)
     if Variable_match:
         variables[line.split("=")[0].strip()] = 1025 + len(variables)

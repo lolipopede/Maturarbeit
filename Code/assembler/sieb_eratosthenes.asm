@@ -1,73 +1,76 @@
 # Sieb des Eratosthenes fuer die Zahlen 1 bis 100.
-# RAM[1..100]: 1 bedeutet prima, 0 bedeutet nicht prima.
-# Die Zaehler liegen in RAM[1025..1027].
-# Bedingter Sprung: "Bedingung, Ziel, Sprungbedingung, LABEL"
+# Der Programmcode belegt RAM[1..83] (83 Maschinenwoerter).
+# RAM[n + 83]: 1 bedeutet prima, 0 bedeutet nicht prima.
+# Die Ergebnistabelle liegt deshalb in RAM[84..183].
+# n, p und m sind Assembly-Variablen; ihr Inhalt wird beim Lesen direkt
+# in das A-Register geladen. "name = D" speichert einen neuen D-Wert.
 
-# i = 2, p = 2, m = 0
-A=2
-A, wD, nj
-A=1025
-D, wM, nj
-A=2
-A, wD, nj
-A=1026
-D, wM, nj
-A=1027
+n=2
+p=1
+m=0
+
+# 1 ist keine Primzahl. Die Zahlen 2 bis 100 als prima markieren.
+A=84
 0, wM, nj
 
-# 0 und 1 sind keine Primzahlen.
-A=0
-0, wM, nj
-A=1
-0, wM, nj
-
-# Alle Zahlen von 2 bis 100 zunaechst als prima markieren.
 @INIT
-A=1025
-M, wD, nj
-D, wA, nj
+n
+A, wD, nj
+A=83
+D+A, wA, nj
 1, wM, nj
-A=1025
-M, wD, nj
-D+1, wM, nj
-A=1025
-M, wD, nj
+n
+A, wD, nj
+D+1, wD, nj
+n = D
+n
+A, wD, nj
 A=100
 A-D, wD, nj
 D, dw, comp>=0, INIT
 
-# Fuer jeden Teiler p von 2 bis 10 seine Vielfachen loeschen.
+# Vielfache des Kandidaten p ueberspringen, wenn p schon gestrichen ist.
 @OUTER
-A=1026
+p
+A, wD, nj
+D+1, wD, nj
+p = D
+p
+A, wD, nj
+A=83
+D+A, wA, nj
 M, wD, nj
-D, wA, nj
-D+A, wD, nj
-A=1027
-D, wM, nj
+D, dw, comp=0, OUTER
 
-@INNER
-A=1027
-M, wD, nj
-D, wA, nj
-0, wM, nj
-A=1027
-M, wD, nj
-A=1026
-M, wA, nj
+# m = 2 * p
+p
+A, wD, nj
+p
 D+A, wD, nj
-A=1027
-D, wM, nj
-A=1027
-M, wD, nj
+m = D
+
+# m, m+p, m+2p, ... streichen.
+@INNER
+m
+A, wD, nj
+A=83
+D+A, wA, nj
+0, wM, nj
+m
+A, wD, nj
+p
+D+A, wD, nj
+m = D
+m
+A, wD, nj
 A=100
 A-D, wD, nj
 D, dw, comp>=0, INNER
 
-A=1026
-M, wD, nj
-D+1, wM, nj
-A=1026
-M, wD, nj
+# Weiter bis p=10; p=11 wird als harmloser zusaetzlicher Teiler bearbeitet,
+# danach ist die Schleife beendet.
+p
+A, wD, nj
 A=10
 A-D, wD, nj
 D, dw, comp>=0, OUTER
