@@ -1,0 +1,20 @@
+Titelblat
+Inhalt
+Einleitung
+Analyse Forschungslage
+
+Assembler
+    Programierung
+        Betabefehle
+        Alphabefehle
+        Lables
+        Variabeln
+    Test und resultate
+        Forgehensweise
+        ergebniss
+
+Compiler
+    Programierung
+        ...
+    (test)
+Fazit
