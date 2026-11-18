@@ -8,6 +8,7 @@
 n=2
 p=1
 m=0
+#input= irgend eine Zahl
 
 # 1 ist keine Primzahl. Die Zahlen 2 bis 100 als prima markieren.
 A=84
@@ -74,3 +75,6 @@ A, wD, nj
 A=10
 A-D, wD, nj
 D, dw, comp>=0, OUTER
+
+
+

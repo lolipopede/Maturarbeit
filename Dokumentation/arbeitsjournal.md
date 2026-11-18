@@ -97,3 +97,8 @@ Ich habe nun die Variabeln funktionell gemacht. hatte dies zufohr vergessen und 
 
 ### ---
 Ich habe mein probekappittel gemacht jedoch das über die ganze woche und vergessen das Arbeitsjournal weiterzuführen
+
+## 18.11.2026
+
+### 8:45-9:10
+Ich habe mich weiterhin über compiler informiert und habe eine grobe vorstellung wie ich tokenizer/lexere und Parser machen kann.
