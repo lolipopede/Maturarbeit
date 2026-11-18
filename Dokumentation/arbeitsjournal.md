@@ -102,3 +102,6 @@ Ich habe mein probekappittel gemacht jedoch das über die ganze woche und verges
 
 ### 8:45-9:10
 Ich habe mich weiterhin über compiler informiert und habe eine grobe vorstellung wie ich tokenizer/lexere und Parser machen kann.
+
+### 9:50-11:00
+Ich habe angefangen mit dem compiler und habe einen lexer fertig gestellt. Jedoch beim programmieren vom parser ist mir aufgefallen das der lexer garnicht mit meinem parser funktionieren würde daher muss ich den lexer noch um einiges verbessern und überarbeiten von seinem cor auf.
