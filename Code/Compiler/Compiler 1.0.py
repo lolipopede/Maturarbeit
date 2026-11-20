@@ -1,5 +1,7 @@
 # compiler.py
 
+variables = {}
+
 # Token 
 class Token:
     def __init__(self, type_, value):
@@ -45,10 +47,52 @@ class Parser:
         else:
             raise ValueError(f"Erwartet: {value}, gefunden: {token} Unerwartetes Token")
 
-    def parse_number(self):
+    def parse_factor(self):
         token = self.current_token()
         if token and token.type == "NUMBER":
             self.pos += 1
             return token.value
+
+        elif token and token.type == "IDENTIFIER":
+            var_name = token.value
+            self.pos += 1
+            if var_name in variables:
+                return variables[var_name]
+            else:
+                raise ValueError(f"Variable '{var_name}' wurde noch nicht definiert.")
+
+        raise ValueError(f"Erwartet eine Zahl oder einen Bezeichner, gefunden: {token}")
+
+    def parse_identifier(self):
+        token = self.current_token()
+        if token and token.type == "IDENTIFIER":
+            self.pos += 1
+            return token.value
         else:
-            raise ValueError(f"Erwartet eine Zahl, gefunden: {token}")
+            raise ValueError(f"Erwartet einen Bezeichner, gefunden: {token}")
+
+    def parse_expression(self):
+        result = self.parse_factor()
+        while self.current_token() and self.current_token().value in ("+", "-"):
+            op = self.eat(self.current_token().value)
+            right = self.parse_factor()
+            if op.value == "+":
+                result += right
+            elif op.value == "-":
+                result -= right
+        return result
+
+    def parse_statement(self):
+
+        if (self.current_token() and self.current_token().type == "IDENTIFIER" 
+            and self.pos + 1 < len(self.tokens) 
+            and self.tokens[self.pos + 1].value == "="):
+
+            var_name = self.tokens[self.pos].value
+            self.pos += 1
+            self.eat("=")
+            value = self.parse_expression() 
+            variables[var_name] = value
+
+        else: 
+            return self.parse_expression()
